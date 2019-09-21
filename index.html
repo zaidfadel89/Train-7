@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="height:950px; margin-left:10%;margin-right:10%">
+      <div
+        id="nav"
+        style="background-color: sienna;height:200px;text-align: center;padding-top: 6%"
+      >
+        <h1>Any Time Is Train Time</h1>
+      </div>
+      <br />
+      <br />
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="trainName">trainName</th>
+            <th scope="destination">Destination</th>
+            <th scope="frequency">frequency(date)</th>
+            <th scope="nextArrival">nextArrival</th>
+            <th scope="minutesAway">minutesAway</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <!-- <br />
+      <br />
+      <br />
+      <br /> -->
+      <div id="employeeshere"></div>
+      <form>
+        <div class="form-group">
+          <label
+            style="background-color: blue;width:100%;color:cornsilk"
+            for="exampleInputEmail1"
+            >Add Train</label
+          >
+          <label for="add-Name">Add Name</label>
+
+          <input
+            type="name"
+            class="form-control"
+            id="addName"
+            aria-describedby="emailHelp"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Destination</label>
+          <input
+            type="Destination"
+            class="form-control"
+            id="destination"
+            placeholder="Destination"
+          />
+          <label for="exampleInputPassword1">Train Time</label>
+          <input
+            type=""
+            class="form-control"
+            id="traintime"
+            placeholder="Train Time"
+          />
+          <label for="exampleInputPassword1">Frequency</label>
+          <input
+            type=""
+            class="form-control"
+            id="frequency"
+            placeholder="Frequency"
+          />
+        </div>
+        <button type="submit" id="add-train">Submit</button>
+      </form>
+    </div>
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
